@@ -21,9 +21,20 @@
 //The depth of the node with value 9 is 3.
 //Summing all of these values we get 16.
 
-//This problem is almost identical to branch sums as we just worked on, given that we have to depth-first search through a binary tree and sum the depth of the nodes. The logic here is we write a DFS helper function and in that function we pass in the node and current level. If there is no node, we return 0 and we're done. Then we just return the current value of level PLUS a recursive call of the DFS function passing in the left node as well as adding 1 to the current value of level PLUS another recursive call of the DFS function passing in the right now as well as adding 1 to the current value of the level. This equates to the sum of all node depths. At the end of this recursive search, we'll be left with the node depths.
+//This problem is almost identical to branch sums as we just worked on, given that we
+//have to depth-first search through a binary tree and sum the depth of the nodes. The
+// logic here is we write a DFS helper function and in that function we pass in the node
+// and current level. If there is no node, we return 0 and we're done. Then we just
+// return the current value of level PLUS a recursive call of the DFS function passing
+// in the left node as well as adding 1 to the current value of level PLUS another
+// recursive call of the DFS function passing in the right now as well as adding 1 to
+// the current value of the level. This equates to the sum of all node depths. At the
+// end of this recursive search, we'll be left with the node depths.
 
-//The time complexity of this algorithm is O(n) given that n is the amount of nodes in the tree. This is because at every node, we're just adding values(constant time operation). So at the worst case, we're spending O(n) traversing the tree of n nodes. The space complexity is O(h) given the height of the tree.
+//The time complexity of this algorithm is O(n) given that n is the amount of nodes
+// in the tree. This is because at every node, we're just adding values(constant time
+//   operation). So at the worst case, we're spending O(n) traversing the tree of n
+//   nodes. The space complexity is O(h) given the height of the tree.
 
 //O(n) time | O(h) space complexity
 function nodeDepths(root) {
