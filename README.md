@@ -7,10 +7,10 @@ Write a function that takes in a Binary Tree and reutnrs the sum of it's nodes' 
 Each *BinaryTree* node has an integer *value*, a *left* child node, and a *right* child node. Children nodes can either be BinaryTree nodes themselves or *None*/*null*.<br>
 
  Sample input: tree =    1<br>
-                       /   \<br>
-                      2     3<br>
-                   /   \  /  \<br>
-                  4    5 6   7<br>
+                       /   \ <br>
+                      2     3 <br>
+                   /   \  /  \ <br>
+                  4    5 6   7 <br>
                 /  \  <br>
                8   9 <br>
 
